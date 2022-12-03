@@ -78,8 +78,12 @@ public class CategorySelection extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        System.out.println("File output written");
+            System.out.println("File output written");
 
+            Button discoverButton = findViewById(R.id.discoveryButton);
+            discoverButton.setOnClickListener(v -> {
+                discoverClient();
+            });
 
             Button uploadButton = findViewById(R.id.uploadImage);
             uploadButton.setOnClickListener(v->{
@@ -148,5 +152,26 @@ public class CategorySelection extends AppCompatActivity {
 
         return chunkedImages;
     }
+
+//    private void setEventListeners() {
+//        bMaster.setOnClickListener((view) -> {
+//            startClientDiscoveryActivity();
+//        });
+//
+//
+//        bWorker.setOnClickListener((view) -> {
+//            startWorkAdvertisementActivity();
+//        });
+//    }
+
+    private void discoverClient() {
+        Intent intent = new Intent(getApplicationContext(), DiscoverClientActivity.class);
+        startActivity(intent);
+    }
+
+//    private void startWorkAdvertisementActivity() {
+//        Intent intent = new Intent(getApplicationContext(), WorkerInitiationActivity.class);
+//        startActivity(intent);
+//    }
 
 }
