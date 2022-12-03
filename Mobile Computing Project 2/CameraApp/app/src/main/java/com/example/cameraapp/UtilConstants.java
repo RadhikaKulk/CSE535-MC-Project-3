@@ -1,6 +1,9 @@
 package com.example.cameraapp;
 
 public class UtilConstants {
+
+    // FOR TEST COMMIT
+
     public static final String MASTER_TAG = "MASTER";
     public static final String WORKER_TAG = "WORKER";
 
