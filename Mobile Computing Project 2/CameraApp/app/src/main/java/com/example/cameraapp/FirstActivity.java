@@ -1,16 +1,10 @@
 package com.example.cameraapp;
 
-import static android.Manifest.permission.CAMERA;
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
-
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 public class FirstActivity extends AppCompatActivity {
 
@@ -39,7 +33,7 @@ public class FirstActivity extends AppCompatActivity {
 
 
         advertiseModeButton.setOnClickListener((view) -> {
-            //startAdvertisementActivity();
+            startAdvertisementActivity();
         });
     }
 
@@ -49,7 +43,7 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     private void startAdvertisementActivity() {
-//        Intent intent = new Intent(getApplicationContext(), AdvertisementActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), AdvertisementInitActivity.class);
+        startActivity(intent);
     }
 }

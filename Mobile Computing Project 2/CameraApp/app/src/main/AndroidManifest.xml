@@ -28,6 +28,12 @@
             android:name=".DiscoverClientActivity"
             android:exported="true" />
         <activity
+            android:name=".AdvertiserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdvertisementInitActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
 
